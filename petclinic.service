@@ -1,0 +1,12 @@
+[Unit]
+Description="Pet Clinic demo"
+After=network.target
+
+[Service]
+User=jenkins
+Group=jenkins
+WorkingDirectory=/home/jenkins/stagePetClinic
+ExecStart=/usr/bin/java -jar /home/jenkins/stagePetClinic/target/spring-petclinic-2.4.5.jar
+
+[Install]
+WantedBy=multi-user.target
