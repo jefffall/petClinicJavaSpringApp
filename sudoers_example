@@ -1,0 +1,6 @@
+root    ALL=(ALL:ALL) ALL
+jenkins    ALL = NOPASSWD: /usr/bin/systemctl
+jenkins    ALL = NOPASSWD: /snap/bin/microk8s.enable
+jenkins    ALL = NOPASSWD: /snap/bin/microk8s.disable
+jenkins    ALL = NOPASSWD: /snap/bin/microk8s
+jenkins ALL=(ALL:ALL) ALL
