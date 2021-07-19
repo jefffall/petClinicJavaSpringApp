@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: petclinic
-        image: http://build.jeffreyfall.com/containers/petclinic.tar.gz 
+        image: https://build.jeffreyfall.com/containers/petclinic.tar.gz 
         ports:
         - containerPort: 80
