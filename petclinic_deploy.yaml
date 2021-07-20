@@ -5,6 +5,7 @@ metadata:
   labels:
     app: petclinic
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: petclinic
@@ -14,7 +15,8 @@ spec:
         app: petclinic
     spec:
       containers:
-      - name: petclinic
-        image: https://build.jeffreyfall.com/containers/petclinic.tar.gz 
+      - name: petclinic 
+        image: petclinic:local
+        imagePullPolicy: Never
         ports:
-        - containerPort: 80
+        - containerPort: 8080
