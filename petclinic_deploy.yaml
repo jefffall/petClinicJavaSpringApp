@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: petclinic 
-        image: petclinic:local
+        image: localhost:32000/petclinic:local
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
